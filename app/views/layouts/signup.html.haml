@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    = render 'layouts/head'
+  %body
+    %header.navbar.navbar-fixed-top
+      %nav.navbar-inner
+        .container
+          = render 'layouts/navigation'
+    #main{:role => "main"}
+      %div{:class => 'container signup_container'}
+        %div{:class => 'content span6'}
+          .row
+            = render 'layouts/messages'
+            = yield
+          %footer
+      / ! end of .container
+    / ! end of #main
